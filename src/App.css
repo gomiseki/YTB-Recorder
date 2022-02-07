@@ -70,6 +70,10 @@ header{
     display:flex;
     align-items: center;
     color: white;
+    font-size: 20px;
+}
+#logo{
+    width: 50px;
 }
 header>p{
     margin-left: 10px;
@@ -82,7 +86,7 @@ header>p{
     align-items: center;
     color: white;
     width:90%;
-    font-size: 20px;
+    font-size: 18px;
     flex:8;
 }
 .innerContainer{
@@ -122,10 +126,79 @@ header>p{
 
 #recordContainer{
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    height: 30%;
+    width: 100%;
+}
+
+#recordContainer> .state{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width:320px;
+    color: lightgreen;
+}
+
+#recordContainer> .message{
+    display: flex;
+    align-items: center;
+    flex: 2;
+    width:320px;
+    border-top: 1px solid black;
+}
+
+#btn{
+    flex:1;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+#btn>button{
+    width: 50px;
+    height: 40px;
+    padding: 0px;
+    font-size:large;
+    padding:2px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+}
+#btn>button:hover{
+    border: 2px solid silver;
+}
+#btn>button>img{
     width: 100%;
-    height: 30%;
+    height: 100%;
+}
+
+#vol{
+    flex:3;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#vol>div{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#vol>div>p{
+    width:20%;
+}
+#vol>div>input{
+    width:30%;
+}
+audio{
+    width:100%;
+    height: 50%;
 }
 footer{
     width:90%;
